@@ -11,7 +11,7 @@ request(url, function(error, response, html) {
     html = html.split("급상승")[0];
     html = html.split("\n");
     for (var i in html) {
-      if (html[i] > 20 && i > 100) break;
+      if (html[i] > 20 || i > 300) break;
       if (html[i].trim() == "") continue;
       if (!isNaN(html[i])) {
         keywords[html[i]] = html[i].trim() + ". " + html[Number(i) + 1].trim();
