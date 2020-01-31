@@ -1,24 +1,22 @@
 var request = require("request");
-var url = "https://www.naver.com/";
+var url = "https://www.naver.com/srchrank?frm=main&ag=all&gr=1&ma=-2&si=0&en=0&sp=0";
 request(url, function(error, response, html) {
   if (error) {
     throw error
   };
-  html = html.replace(/(<([^>]+)>)/g, "");
   var keywords = [];
+  var keywordsWithSynonyms = [];
   try {
-    html = html.split("급상승 검색어")[1];
-    html = html.split("급상승")[0];
-    html = html.split("\n");
-    for (var i in html) {
-      if (html[i] > 20 || i > 300) break;
-      if (html[i].trim() == "") continue;
-      if (!isNaN(html[i])) {
-        keywords[html[i]] = html[i].trim() + ". " + html[Number(i) + 1].trim();
-      }
+      datas = JSON.parse(html);
+    for(var i in datas["data"]){
+      var keywordData = datas["data"][i]
+      var str = keywordData["rank"] + ". " + keywordData["keyword"];
+      keywords.push(str);
+      keywordsWithSynonyms.push(str + (keywordData["keyword_synonyms"][0] ? " , " + keywordData["keyword_synonyms"] : ""));
     }
   } catch (e) {
-    console.error("오류발생\n" + e);
+    console.error(e);
   }
   console.log(keywords.join("\n"));
+  console.log("\n유사 검색어 포함 : \n" + keywordsWithSynonyms.join("\n"));
 });
