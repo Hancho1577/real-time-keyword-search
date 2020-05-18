@@ -1,8 +1,19 @@
-# 네이버 실시간 급상승 파싱 소스
+# 네이버 실시간 검색어
+> 네이버 실시간 검색어를 가져오는 간단한 예제
 
-Node js용 네이버 실시간검색어 파싱 예제소스입니다.
+[![HitCount](http://hits.dwyl.com/jungwuk-ryu/real-time-keyword-search.svg)](http://hits.dwyl.com/jungwuk-ryu/real-time-keyword-search)
 
-출력 (2019년 8월 14일 오전 4시 기준) :
+node js및 카카오톡 봇에서 네이버 실시간 검색어를 가져오는 간단한 예제입니다.
+
+## 사용 방법
+
+카카오톡 봇:
+
+forKakaotalkBot_full.js 파일을 봇 폴더에 넣어서 바로 사용할 수 있습니다.
+
+## 출력
+
+(2019년 8월 14일 오전 4시 기준) :
 
 ```
 1. 리니지m
