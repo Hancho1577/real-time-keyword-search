@@ -3,13 +3,20 @@
 
 [![HitCount](http://hits.dwyl.com/jungwuk-ryu/real-time-keyword-search.svg)](http://hits.dwyl.com/jungwuk-ryu/real-time-keyword-search)
 
-node js및 카카오톡 봇에서 네이버 실시간 검색어를 가져오는 간단한 예제입니다.
+node js및 카카오톡 봇으로 네이버 실시간 검색어와 유사 검색어를 가져오는 간단한 예제입니다.
 
 ## 사용 방법
+### 카카오톡 봇 (Messenger Bot)
+[forKakaotalkBot_full.js](https://github.com/jungwuk-ryu/NaverRealtimeSrcKeyword/blob/master/forKakaotalkBot_full.js) 파일을 봇 폴더에 넣어서 바로 사용할 수 있습니다.
 
-카카오톡 봇:
+### Node js
+**request 모듈이 필요합니다.**
 
-forKakaotalkBot_full.js 파일을 봇 폴더에 넣어서 바로 사용할 수 있습니다.
+[main.js](https://github.com/jungwuk-ryu/NaverRealtimeSrcKeyword/blob/master/main.js) 파일을 다운로드 한 후, 터미널에서 아래 명령어와 같이 실행할 수 있습니다.
+```
+node main.js
+```
+
 
 ## 출력
 
