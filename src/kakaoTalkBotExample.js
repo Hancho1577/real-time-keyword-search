@@ -6,13 +6,14 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName,
       json = json.replace(/(<([^>]+)>)/ig, "");
 
       var keywords = [];
-      datas = JSON.parse(json);
+      resultData = JSON.parse(json);
 
-      for (var i in datas["data"]) {
-        var keywordData = datas["data"][i]
+      for (var i in resultData["data"]) {
+        var keywordData = resultData["data"][i]
         var str = keywordData["rank"] + ". " + keywordData["keyword"];
         keywords.push(str);
       }
+
       replier.reply(keywords.join("\n"));
     } catch (e) {
       replier.reply("오류가 발생하였습니다.");
