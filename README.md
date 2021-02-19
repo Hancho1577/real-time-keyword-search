@@ -6,15 +6,15 @@
 node js및 카카오톡 봇으로 네이버 실시간 검색어와 유사 검색어를 가져오는 간단한 예제입니다.
 
 ## 사용 방법
-### 카카오톡 봇 (Messenger Bot)
-[forKakaotalkBot_full.js](https://github.com/jungwuk-ryu/NaverRealtimeSrcKeyword/blob/master/forKakaotalkBot_full.js) 파일을 봇 폴더에 넣어서 바로 사용할 수 있습니다.
+### 카카오톡 봇 예제 (Messenger Bot)
+[kakaoTalkBotExample.js](https://github.com/jungwuk-ryu/NaverRealtimeSrcKeyword/blob/master/src/kakaoTalkBotExample.js) 파일을 봇 폴더에 넣어서 바로 사용할 수 있습니다.
 
-### Node js
+### Node js 예제
 **request 모듈이 필요합니다.**
 
-[main.js](https://github.com/jungwuk-ryu/NaverRealtimeSrcKeyword/blob/master/main.js) 파일을 다운로드 한 후, 터미널에서 아래 명령어와 같이 실행할 수 있습니다.
+[nodeJsExample.js](https://github.com/jungwuk-ryu/NaverRealtimeSrcKeyword/blob/master/src/nodeJsExample.js) 파일을 다운로드 한 후, 터미널에서 아래 명령어와 같이 실행할 수 있습니다.
 ```
-node main.js
+node nodeJsExample.js
 ```
 
 
